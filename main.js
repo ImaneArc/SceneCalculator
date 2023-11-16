@@ -4,6 +4,11 @@ window.onload = function bgImages (){
     
     const bodyImages = [
         'image (1).jpg',
+        'image (10).jpg',
+        'image (11).jpg',
+        'image (12).jpg',
+        'image (13).jpg',
+        'image (14).jpg',
         'image (2).jpg',
         'image (3).jpg',
         'image (4).jpg',
@@ -12,12 +17,6 @@ window.onload = function bgImages (){
         'image (7).jpg',
         'image (8).jpg',
         'image (9).jpg',
-        'image (9).jpg',
-        'image (10).jpg',
-        'image (11).jpg',
-        'image (12).jpg',
-        'image (13).jpg',
-        'image (14).jpg',
     ];
 
     const randomBg = Math.floor(Math.random() * bodyImages.length);

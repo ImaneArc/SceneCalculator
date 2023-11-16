@@ -22,7 +22,7 @@ window.onload = function bgImages (){
 
     const randomBg = Math.floor(Math.random() * bodyImages.length);
 
-    body.style.backgroundImage =`url('/src/images/${bodyImages[randomBg]}')`;
+    body.style.backgroundImage =`url('/images/${bodyImages[randomBg]}')`;
 }
 
 

@@ -1,0 +1,46 @@
+{
+  "homepage": "http://ImaneArc.github.io/SceneCalculator",
+
+  "name": "calculator",
+
+  "version": "1.0.0",
+
+  "description": "",
+
+  "main": "index.js",
+
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "",
+    "build":"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+
+  "keywords": [],
+
+  "author": "",
+
+  "license": "ISC",
+
+  "dependencies": {
+
+    "gulp": "^4.0.2",
+
+    "gulp-autoprefixer": "^9.0.0",
+
+    "gulp-sass": "^5.1.0",
+
+    "sass": "^1.69.5"
+
+  },
+
+  "devDependencies": {
+
+    "gh-pages": "^6.0.0"
+
+  }
+
+}
+

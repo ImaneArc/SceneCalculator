@@ -1,7 +1,7 @@
 
-window.onload = function bgImages() {
+window.onload = function bgImages (){
     const body = document.body;
-
+    
     const bodyImages = [
         'image (1).jpg',
         'image (10).jpg',
@@ -19,24 +19,10 @@ window.onload = function bgImages() {
         'image (9).jpg',
     ];
 
-    // Preload images
-    const imagePromises = bodyImages.map(imageSrc => {
-        const image = new Image();
-        image.src = `./images/${imageSrc}`;
-        return new Promise(resolve => {
-            image.onload = resolve;
-        });
-    });
+    const randomBg = Math.floor(Math.random() * bodyImages.length);
 
-    Promise.all(imagePromises).then(() => {
-        // All images are loaded, set a random background
-        const randomBg = Math.floor(Math.random() * bodyImages.length);
-        body.style.backgroundImage = `url('./images/${bodyImages[randomBg]}')`;
-    });
-};
-
-
-
+    body.style.backgroundImage =`url('./images/${bodyImages[randomBg]}')`;
+}   
 
 const display = document.getElementById('outputDisplay');
 const buttons = document.querySelectorAll('#buttons button');
